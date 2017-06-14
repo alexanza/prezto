@@ -13,5 +13,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH=/Users/alex/Library/Android/sdk/platform-tools:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:/Users/alex/Library/Android/sdk/platform-tools:$PATH
 alias vagrant='sudo vagrant'
+alias atypic='cd ~/Documents/Projects/Atypic'
