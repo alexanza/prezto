@@ -32,3 +32,6 @@
 [submodule "modules/ssh-connect"]
 	path = modules/ssh-connect
 	url = git@github.com:Greenek/ssh-connect.git
+[submodule "modules/history-search-multi-word"]
+	path = modules/history-search-multi-word
+	url = git@github.com:zdharma/history-search-multi-word.git
