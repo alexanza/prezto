@@ -29,3 +29,6 @@
 [submodule "modules/k"]
 	path = modules/k
 	url = git@github.com:supercrabtree/k.git
+[submodule "modules/ssh-connect"]
+	path = modules/ssh-connect
+	url = git@github.com:Greenek/ssh-connect.git
