@@ -12,7 +12,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/k/k.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/k/k.sh"
+fi
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/ssh-connect/ssh-connect.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/ssh-connect/ssh-connect.sh"
+fi
+
 # Customize to your needs...
 export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:/Users/alex/Library/Android/sdk/platform-tools:$PATH
 alias vagrant='sudo vagrant'
 alias atypic='cd ~/Documents/Projects/Atypic'
+

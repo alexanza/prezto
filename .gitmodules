@@ -25,3 +25,9 @@
 [submodule "modules/prompt/external/async"]
 	path = modules/prompt/external/async
 	url = https://github.com/mafredri/zsh-async.git
+[submodule "modules/k"]
+	path = modules/k
+	url = git@github.com:supercrabtree/k.git
+[submodule "modules/ssh-connect"]
+	path = modules/ssh-connect
+	url = git@github.com:gko/ssh-connect.git
