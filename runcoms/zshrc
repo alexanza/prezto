@@ -20,6 +20,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/ssh-connect/ssh-connect.sh" ]]; the
   source "${ZDOTDIR:-$HOME}/.zprezto/modules/ssh-connect/ssh-connect.sh"
 fi
 
+if [[ -s "/usr/local/etc/profile.d/z.sh" ]]; then
+  source "/usr/local/etc/profile.d/z.sh"
+fi
+
 # Customize to your needs...
 export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:/Users/alex/Library/Android/sdk/platform-tools:$PATH
 alias vagrant='sudo vagrant'
