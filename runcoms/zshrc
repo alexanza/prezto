@@ -28,8 +28,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/history-search-multi-word/history-s
   source "${ZDOTDIR:-$HOME}/.zprezto/modules/history-search-multi-word/history-search-multi-word.plugin.zsh"
 fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/per-directory-history/per-directory-history.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/per-directory-history/per-directory-history.zsh"
+fi
+
 # Customize to your needs...
-export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:/Users/alex/Library/Android/sdk/platform-tools:$PATH
+export HOMEBREW_GITHUB_API_TOKEN="9cba3d9dc85b662107d468c0d82ef4bb3237a323"
+export PATH=$(brew --prefix php)/bin:/Users/alex/Library/Android/sdk/platform-tools:/usr/local/bin:$PATH
+
 alias vagrant='sudo vagrant'
 alias atypic='cd ~/Documents/Projects/Atypic'
 
+function homestead() {
+    ( cd ~/Documents/Projects/Homestead && vagrant $* )
+}
+
+#ssh-add -K ~/.ssh/id_rsa

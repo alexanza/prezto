@@ -35,3 +35,6 @@
 [submodule "modules/history-search-multi-word"]
 	path = modules/history-search-multi-word
 	url = git@github.com:zdharma/history-search-multi-word.git
+[submodule "modules/per-directory-history"]
+	path = modules/per-directory-history
+	url = git@github.com:jimhester/per-directory-history.git
