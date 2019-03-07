@@ -46,8 +46,8 @@ function homestead() {
     ( cd ~/Documents/Projects/Homestead && vagrant $* )
 }
 
-unalias mysql
-ssh-add -K ~/.ssh/id_rsa &>/dev/null
+unalias mysql &>/dev/null
+#ssh-add -K ~/.ssh/id_rsa &>/dev/null
 
 function gitinit() {
     if [ $# -eq 0 ] || [ -z "$1" ] ; then
