@@ -33,36 +33,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/per-directory-history/per-directory
 fi
 
 # Customize to your needs...
-source /Users/alex/.zshrc-github-token
-#export PATH=$(brew --prefix php)/bin:/Users/alex/Library/Android/sdk/platform-tools:/usr/local/bin:$PATH
-export PATH=/Users/alex/Library/Android/sdk/platform-tools:/usr/local/bin:$PATH
-export PATH=/usr/local/Cellar/ruby/2.4.1_1/bin:$PATH
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
-
-#alias vagrant='sudo vagrant'
-alias meaweb='cd ~/Documents/Projects/Meaweb'
-
-function homestead() {
-    ( cd ~/Documents/Projects/Homestead && vagrant $* )
-}
-
-unalias mysql &>/dev/null
-#ssh-add -K ~/.ssh/id_rsa &>/dev/null
-
-function gitinit() {
-    if [ $# -eq 0 ] || [ -z "$1" ] ; then
-        echo "Remote origin argument is missing"
-        return 1
-    fi
-
-    if [ -d .git ] ; then
-        echo "Git already initialized"
-        return 1
-    fi
-
-    git init && \
-    git add . && \
-    git commit -m 'Initial commit' && \
-    git remote add origin $1 && \
-    git push -u origin master
-}
+if [[ -s "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshrc.local"
+fi
