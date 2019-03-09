@@ -33,6 +33,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/modules/per-directory-history/per-directory
 fi
 
 # Customize to your needs...
+alias nano='nano -c'
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc.local"
 fi
